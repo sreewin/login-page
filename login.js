@@ -28,5 +28,6 @@ function login(event) {
     .catch(error => {
         console.error('Error:', error);
         document.getElementById('response').innerText = 'An error occurred. Please try again.';
+	document.getElementById('response').style.color = 'red';
     });
 }
